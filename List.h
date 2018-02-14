@@ -12,12 +12,16 @@ public:
   int size();
   //create an empty list
   void create();
+  //delete the list
+  void deleteList();
+  //reverse the list;
+  void reverse();
 
 
 private:
   class Node{
     T & data_;
-    Node* next;
+    Node* next_;
     Node(T & data);
   }
   Node* head_;
