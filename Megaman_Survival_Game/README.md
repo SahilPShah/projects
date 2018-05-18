@@ -1,0 +1,1 @@
+This directory contains files that implement a spin-off of the classic arcade game, Megaman. This game was written in the SystemVerilog HDL and is designed to run on an FPGA with a USB keyboard and a VGA monitor.
