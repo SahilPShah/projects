@@ -1,0 +1,20 @@
+#Object Files
+*.o
+
+#Image Files
+*.png
+*.jpeg
+
+#Config files
+*.conf
+*.config
+
+#Markup
+*.xml
+*.html
+
+#Text
+*.txt
+*.log
+
+
