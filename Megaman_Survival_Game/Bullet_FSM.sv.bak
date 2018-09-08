@@ -1,4 +1,0 @@
-module Ball_FSM(input logic x_shoot_key,
-					 input logic frame_clk,
-					 input logic Clk, RESET,
-					);
