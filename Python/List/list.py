@@ -3,13 +3,13 @@ class _Node(object):
         self.data = data
         self.next = next
 
-    def get_data(self):
+    def getData(self):
         return self.data
 
-    def get_next(self):
+    def getNext(self):
         return self.next
 
-    def set_next(self, next):
+    def setNext(self, next):
         self.next = next
 
 
@@ -20,7 +20,7 @@ class LinkedList(object):
 
     def insert(self, data):
         node = _Node(data)
-        node.set_next(self.head)
+        node.setNext(self.head)
         self.head = node
 
     def size(self):
@@ -28,5 +28,31 @@ class LinkedList(object):
         count = 0
         while current:
             count+=1
-            current = current.get_next()
+            current = current.getNext()
         return count
+
+    def search(self,data):
+        current = self.head
+        while current:
+            if current.getData() == data:
+                return data
+            current = current.getNext()
+        if current is None:
+            raise ValueError("Data is not in list")
+
+    def delete(self, data):
+        current = self.head
+        previous = None
+        found = False
+        while current and found is False:
+            if current.getData() == data:
+                found = True
+            else:
+                previous = current
+                current = current.getNext()
+        if current is None:
+            raise ValueError("Data not in list")
+        if previous is None:
+            self.head = current.getNext()
+        else:
+            previous.set_next(current.getNext())
