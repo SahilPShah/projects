@@ -16,7 +16,8 @@ public class PasswordGeneration {
 	    for(int j = 0; j < len; j++) {
 	    	pswrd2+=values.charAt(rng.nextInt(values.length()));
 	    }
-	    System.out.println(pswrd2);
+	    
+	    System.out.println(pswrd2); //output RNG password
 	}
 
 }

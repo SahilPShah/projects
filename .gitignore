@@ -19,7 +19,7 @@
 
 
 /.metadata/
-
+/.recommenders/
 *.*
 
 !*.java
