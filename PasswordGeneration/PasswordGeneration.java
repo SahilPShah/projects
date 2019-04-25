@@ -13,6 +13,7 @@ public class PasswordGeneration {
 	    String values = Capital_chars + Small_chars + numbers + symbols;
 	    Random rng = new Random();
 	    String pswrd2 = "";
+	    //build passwrd
 	    for(int j = 0; j < len; j++) {
 	    	pswrd2+=values.charAt(rng.nextInt(values.length()));
 	    }
