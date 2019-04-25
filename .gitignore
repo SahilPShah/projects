@@ -18,3 +18,13 @@
 *.log
 
 
+/.metadata/
+
+*.*
+
+!*.java
+!*.c
+!*.cpp
+!*.hpp
+!*.h
+!*.py
