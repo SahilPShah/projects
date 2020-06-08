@@ -19,6 +19,7 @@ public class TestServer {
 				pw.println("FUCK OFF");
 			else
 				pw.println("Oh hey man");
+			pw.println();
 			pw.close();
 			socket.close();
 
